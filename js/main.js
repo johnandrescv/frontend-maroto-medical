@@ -206,9 +206,24 @@ $(window).on("load", function() {
     });
 
     $('.filtering').on('click', 'span', function() {
-
+        console.log(this);
         $(this).addClass('active').siblings().removeClass('active');
 
     });
+
+    // filter items on button click
+    $('.filtering').on('click', 'div', function() {
+
+        var filterValue = $(this).attr('data-filter');
+
+        $grid.isotope({ filter: filterValue });
+
+    });
+
+    $('.filtering').on('click', 'div', function() {
+        var changeValue = $(this).attr('data-id');
+        $('#' + changeValue).addClass('active').siblings().removeClass('active');
+    });
+
     $grid.isotope({ filter: '.Medias' });
 });

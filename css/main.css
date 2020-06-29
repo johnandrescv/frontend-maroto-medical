@@ -6,7 +6,8 @@ author : Dragon-themes
  
 ****/
 
-//////******
+
+/******
 the content 01-global Style 02-load-wrapp 03-intro-sec 04-navbar 05-welcome-area 06-features-area 07-strategy-area 08-numbers 09-team-area 10-video-area 11-why-area 12-how-work 13-faqs 14-services-area 15-testimonials 16-work-area 17-price-area 18-manager-area 19-blog-area 20-brands-area 21-contact-area 22-map 23-footer-area 24-scroll-top-btn ****** //////
 
 /*----------------------------------------------------
@@ -1091,7 +1092,7 @@ h6 {
 
 .welcome-area {
     background-image: url(../images/imgbackground.jpg);
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2151,8 +2152,8 @@ h6 {
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     perspective: 1000px;
 }
 
@@ -2373,5 +2374,22 @@ h6 {
 @media screen and (max-width:990px) {
     .product-grid2 {
         margin-bottom: 30px
+    }
+}
+
+.start-content {
+    justify-content: flex-start;
+}
+
+.end-content {
+    justify-content: flex-end;
+}
+
+@media screen and (max-width:770px) {
+    .start-content {
+        justify-content: center;
+    }
+    .end-content {
+        justify-content: center;
     }
 }
